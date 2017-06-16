@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        ~function () {
+            var fn = function () {
+                var winW = document.documentElement.clientWidth;
+                if (winW < 640) {
+                    document.documentElement.style.fontSize = winW / 640 * 100 + 'px';
+                }
+            };
+            fn();
+            window.addEventListener('resize', fn, false);
+        }();
+    </script>
+</head>
+<body>
+<main class="mainBox">
+    <section class="swiperBox" id="swiperBox">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide page1">
+                    <h1>Personal resume</h1>
+                    <h2>个人简历</h2>
+                    <img src="img/bg6.png" alt="" class="imgBox">
+                </div>
+                <div class="swiper-slide page2">
+                    <img src="img/bg8.png" alt="" class="imgBox1">
+                    <img src="img/bg7.png" alt="" class="imgBox2">
+                    <h1>Personal Information</h1>
+                    <h2>个人信息</h2>
+                    <figure class="figureBox">
+                        <img src="img/bg9.jpeg" alt="">
+                    </figure>
+                    <ul>
+                        <li>
+                            <span>姓名：</span>
+                            <span>杨雅婷</span>
+                        </li>
+                        <li>
+                            <span>性别</span>
+                            <span>女</span>
+                        </li>
+                        <li>
+                            <span>出生日期：</span>
+                            <span>19970103</span>
+                        </li>
+                        <li>
+                            <span>爱好：</span>
+                            <span>登山、听音乐、看书</span>
+                        </li>
+                        <li>
+                            <span>籍贯：</span>
+                            <span>河北石家庄</span>
+                        </li>
+                        <li>
+                            <span>学历：</span>
+                            <span>大专</span>
+                        </li>
+                        <li>
+                            <span>毕业院校：</span>
+                            <span>石家庄信息工程职业学院</span>
+                        </li>
+                        <li>
+                            <span>专业：</span>
+                            <span>计算机网络</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide page3">
+                    <img src="img/bg8.png" alt="" class="img1">
+                    <img src="img/bg7.png" alt="" class="img2">
+                    <h1>Professional skills </h1>
+                    <h2>专业技能</h2>
+                    <figure class="figureBox1">
+                        <img src="img/html5.png" alt="">
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+                    <figure class="figureBox2">
+                        <img src="img/CSS3.png" alt="">
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+                    <h3>自我评价</h3>
+                    <img src="img/bg6.png" alt="" class="img3">
+                    <p>性格开朗，为人诚恳，乐观向上,拥有较强的适应能力，能吃苦。</p>
+                </div>
+                <div class="swiper-slide page4">
+                    <img src="img/bg3.png" alt="" class="img4">
+                    <h1>Contact Information</h1>
+                    <h2>联系方式</h2>
+                    <ul>
+                        <li><span>手机:</span>15232151835</li>
+                        <li><span>微信:</span>yyt</li>
+                        <li><span>QQ:</span>619770396</li>
+                        <li><span>邮箱：</span>619770396@qq.com</li>
+                        <li><span>地址；</span>河北-石家庄</li>
+                    </ul>
+                    <img src="img/bg2.png" alt="" class="img5">
+                </div>
+                <div class="swiper-slide page5">
+                    <img src="img/bg4.png" alt="">
+                    <h1>感谢观看</h1>
+                    <h2>Thank You</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="musicBox" id="musicBox">
+        <audio src="file/Bandari.mp3" preload="none" loop></audio>
+    </section>
+</main>
+<script src="js/zhufengpeixun.min.js"></script>
+<script>
+    zhufengpeixun.config({
+        swipe: 'swiperBox',
+        music: 'musicBox'
+    })
+</script>
+</body>
+</html>

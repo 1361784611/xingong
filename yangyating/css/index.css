@@ -1,0 +1,505 @@
+.clearfix {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+html {
+    font-size: 100px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainBox {
+    position: relative;
+    margin: 0 auto;
+    max-width: 640px;
+    height: 100%;
+}
+
+.swiperBox, .swiper-container, .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    background: url("../img/bg1.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+/*page1*/
+.page1 h1, .page1 h2 {
+    position: absolute;
+    font-size: .55rem;
+    font-family: 方正舒体;
+    font-weight: bold;
+    height: .6rem;
+    line-height: .6rem;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+    opacity: 0;
+}
+
+.page1 h2 {
+    font-size: .45rem;
+    top: 50%;
+}
+
+.page1 .imgBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2.9rem 0 0 -2.85rem;
+    width: 5.7rem;
+    height: 5.8rem;
+}
+
+#page1 h1 {
+    -webkit-animation: bounceInDown 1s both;
+    animation: bounceInDown 1s both;
+}
+
+#page1 h2 {
+    -webkit-animation: bounceInUp 1s both;
+    animation: bounceInUp 1s both;
+}
+
+@-webkit-keyframes imgMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes imgMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+
+#page1 .imgBox{
+    -webkit-animation: imgMove 5s linear 0s infinite both;
+    animation: imgMove 5s linear 0s infinite both;
+}
+
+/*!*page2*!*/
+.page2 .imgBox1{
+    position: absolute;
+    top: 1.5rem;
+    left: .4rem;
+    opacity: 0;
+}
+
+.page2 .imgBox2{
+    position: absolute;
+    top: 1.5rem;
+    right: .4rem;
+    opacity: 0;
+}
+
+.figureBox img{
+    position: absolute;
+    width: 2.3rem;
+    height: 2.6rem;
+    top: 4rem;
+    right: .3rem;
+    opacity: 0;
+
+}
+
+.page2 h1, .page2 h2 {
+    position: absolute;
+    top: 1.5rem;
+    width: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .45rem;
+    font-family: 方正舒体;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.page2 h2 {
+    top: 2rem;
+    font-size: .35rem;
+}
+
+.page2 ul {
+    position: absolute;
+    font-size: .25rem;
+    top: 4rem;
+    left: .3rem;
+    opacity: 0;
+}
+
+.page2 ul li {
+    line-height: .8rem;
+}
+
+#page2 .imgBox1{
+    -webkit-animation: fadeInRight 1s both;
+    animation: fadeInRight 1s both;
+}
+
+#page2 .imgBox2{
+    -webkit-animation: fadeInLeft 1s both;
+    animation: fadeInLeft 1s both;
+}
+
+#page2 .figureBox img{
+    -webkit-animation: fadeInRight 1s both;
+    animation: fadeInRight 1s both;
+}
+
+#page2 h1 {
+    -webkit-animation: bounceInDown 1s both;
+    animation: bounceInDown 1s both;
+}
+
+#page2 h2 {
+    -webkit-animation: bounceInUp 1s both;
+    animation: bounceInUp 1s both;
+}
+
+#page2 ul {
+    -webkit-animation: fadeInLeft 1s both;
+    animation: fadeInLeft 1s both;
+}
+
+/*!*page3*!*/
+
+.page3 .img1{
+    position: absolute;
+    top: 1.5rem;
+    left: .4rem;
+    opacity: 0;
+}
+
+.page3 .img2 {
+    position: absolute;
+    top: 1.5rem;
+    right: .4rem;
+    opacity: 0;
+}
+
+.page3 h1, .page3 h2 {
+    position: absolute;
+    top: 1.5rem;
+    width: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .45rem;
+    font-family: 方正舒体;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.page3 h2 {
+    top: 2rem;
+    font-size: .35rem;
+}
+
+.figureBox1{
+    position: absolute;
+    top: 3.5rem;
+    left: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .5rem 0 0 -.5rem ;
+}
+
+.figureBox1 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.figureBox1 figcaption{
+    position: absolute;
+    font-size: .4rem;
+    font-family: 方正舒体;
+    height: .6rem;
+    line-height: .6rem;
+    padding: 1.5rem 0 0 0;
+    opacity: 0;
+}
+
+.figureBox2{
+    position: absolute;
+    top: 3.5rem;
+    right: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .5rem .6rem 0 0;
+}
+
+.figureBox2 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.figureBox2 figcaption{
+    position: absolute;
+    font-size: .4rem;
+    font-family: 方正舒体;
+    height: .6rem;
+    line-height: .6rem;
+    padding: 1.5rem 0 0 .3rem;
+    opacity: 0;
+}
+
+.page3 h3{
+    position: absolute;
+    width: .2rem;
+    line-height: 1rem;
+    top: 6.5rem;
+    left: .5rem;
+    font-size: .6rem;
+    font-family: 方正舒体;
+    color: lightpink;
+    opacity:0;
+}
+
+.page3 .img3{
+    position: absolute;
+    top: 6.5rem;
+    right: .3rem;
+    width: 4rem;
+    height: 4rem;
+    opacity: 0;
+}
+
+.page3 p{
+    position: absolute;
+    top: 7.5rem;
+    right: .8rem;
+    width: 3rem;
+    line-height: .7rem;
+    font-size: .26rem;
+    text-align: center;
+    word-break: break-all;
+    opacity: 0;
+}
+
+#page3 .img1 {
+    -webkit-animation: fadeInRight 1s both;
+    animation: fadeInRight 1s both;
+}
+
+#page3 .img2 {
+    -webkit-animation: fadeInLeft 1s both;
+    animation: fadeInLeft 1s both;
+}
+
+#page3 h1 {
+    -webkit-animation: bounceInDown 1s both;
+    animation: bounceInDown 1s both;
+}
+
+#page3 h2 {
+    -webkit-animation: bounceInUp 1s both;
+    animation: bounceInUp 1s both;
+}
+
+#page3 .figureBox1 img{
+    -webkit-animation: shake 1s both;
+    animation: shake 1s both;
+}
+
+#page3 .figureBox2 img{
+    -webkit-animation: shake 1s both;
+    animation: shake 1s both;
+}
+
+#page3 .figureBox1 figcaption{
+    -webkit-animation: rollIn 1s both;
+    animation: rollIn 1s both;
+}
+
+#page3 .figureBox2 figcaption{
+    -webkit-animation: rollIn 1s both;
+    animation: rollIn 1s both;
+}
+
+#page3 h3{
+    -webkit-animation: rubberBand 2s both;
+    animation: rubberBand 2s both;
+}
+
+#page3 img{
+    -webkit-animation: bounceInRight 1s both;
+    animation: bounceInRight 1s both;
+}
+
+#page3 p{
+    -webkit-animation: flash 1s both;
+    animation: flash 1s both;
+}
+
+/*page4*/
+.page4 .img4{
+    position: absolute;
+    top:.5rem;
+    left:.7rem;
+    width: 5rem;
+    height: 1.49rem;
+    opacity: 0;
+}
+
+.page4 .img5{
+    position: absolute;
+    bottom:.5rem;
+    left:.7rem;
+    width: 5rem;
+    height: 1.49rem;
+    opacity: 0;
+}
+
+.page4 h1, .page4 h2 {
+    position: absolute;
+    top: 2.5rem;
+    width: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .45rem;
+    font-family: 方正舒体;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.page4 h2 {
+    top: 3.5rem;
+    font-size: .35rem;
+    padding-bottom: .7rem;
+}
+
+.page4 ul {
+    position: absolute;
+    font-size: .25rem;
+    top: 4.5rem;
+    left: 1.5rem;
+    opacity: 0;
+}
+
+.page4 ul li {
+    line-height: .8rem;
+}
+
+#page4 .img4{
+    -webkit-animation: bounceInDown 1s both;
+    animation: bounceInDown  1s both;
+}
+
+#page4 .img5{
+    -webkit-animation: bounceInUp 1s both;
+    animation: bounceInUp 1s both;
+}
+
+#page4 h1 {
+    -webkit-animation: bounceInDown 1s both;
+    animation: bounceInDown 1s both;
+}
+
+#page4 h2 {
+    -webkit-animation: bounceInUp 1s both;
+    animation: bounceInUp 1s both;
+}
+
+#page4 ul {
+    -webkit-animation: fadeInLeft 1s both;
+    animation: fadeInLeft 1s both;
+}
+
+/*page5*/
+.page5 img{
+    position: absolute;
+    width: 3.5rem;
+    height: 2.5rem;
+
+}
+
+.page5 h1, .page5 h2 {
+    position: absolute;
+    font-size: .55rem;
+    font-family: 方正舒体;
+    font-weight: bold;
+    height: .6rem;
+    line-height: .6rem;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+    opacity: 0;
+}
+
+.page5 h2 {
+    font-size: .45rem;
+    top: 50%;
+}
+
+#page5 h1,#page5 h2{
+    -webkit-animation: flipInX 2s both;
+    animation: flipInX 2s both;
+}
+
+/*music*/
+#musicBox {
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+    z-index: 999;
+    width: .6rem;
+    height: .6rem;
+    background: url("../img/music.svg") no-repeat;
+    background-size: 100% 100%;
+}
+
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#musicBox.move {
+    -webkit-animation: musicMove .5s linear 0s infinite both;
+    animation: musicMove .5s linear 0s infinite both;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>个人简历</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        ~function () {
+            var winW = document.documentElement.clientWidth;
+            if (winW > 640) return;
+            document.documentElement.style.fontSize = (winW / 640) * 100 + 'px';
+        }();
+    </script>
+</head>
+<body>
+<main class="content">
+    <section class="cube" id="jl-cube">
+        <ul class="cubeBox">
+            <li><img src="img/5.png" alt=""></li>
+            <li><img src="img/5.png" alt=""></li>
+            <li><img src="img/5.png" alt=""></li>
+            <li><img src="img/5.png" alt=""></li>
+            <li><img src="img/5.png" alt=""></li>
+            <li><img src="img/5.png" alt=""></li>
+        </ul>
+        <div class="cubeTip"></div>
+    </section>
+    <section class="swipe" id="jl-swiper">
+        <div class="return"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--PAGE1-->
+                <div class="swiper-slide page1">
+                    <dl id="jl-3d" data-page="1">
+                        <dt>个人信息</dt>
+                        <dd>
+                            <a href="">姓名：刘瑞</a>
+                        </dd>
+                        <dd>
+                            <a href="">性别：男</a>
+                        </dd>
+                        <dd>
+                            <a href="">年龄：22</a>
+                        </dd>
+                        <dd>
+                            <a href="">民族：汉</a>
+                        </dd>
+                        <dd>
+                            <a href="">政治面貌：团员</a>
+                        </dd>
+                        <dd>
+                            <a href="">学历：大专</a>
+                        </dd>
+                        <dd>
+                            <a href="">籍贯：河北省石家庄市</a>
+                        </dd>
+                        <dd>
+                            <a href="">应聘职位：前端工程师</a>
+                        </dd>
+                    </dl>
+                </div>
+
+                <!--PAGE2-->
+                <div class="swiper-slide page2">
+                    <h2>专业技能</h2>
+                    <ul class="box">
+                        <li>
+                            <img src="img/zf_course1.png" alt="">
+                            <div class="detail">
+                            <p>js的基础应用</p>
+                        </div>
+                        </li>
+                        <li>
+                            <img src="img/zf_course2.png" alt="">
+                            <div class="detail">
+                                <p>基于Angular构建应用程序</p>
+                        </div>
+                        </li>
+                        <li>
+                            <img src="img/zf_course3.png" alt="">
+                            <div class="detail">
+                                <p>node.js的基础应用</p>
+
+                        </div>
+                        </li>
+                        <li>
+                            <img src="img/zf_course4.png" alt="">
+                            <div class="detail">
+                                <p>css3的应用</p>
+                        </div>
+                        </li>
+                        <li>
+                            <img src="img/zf_course5.png" alt="">
+                            <div class="detail">
+                                <p>APP的开发</p>
+
+                        </div>
+                        </li>
+                        <li>
+                            <img src="img/zf_course6.png" alt="">
+                            <div class="detail">
+                                <p>HTML5基础应用</p>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--PAGE3-->
+                <div class="swiper-slide page3">
+                    <h2>正能量语录</h2>
+                    <p>当你的能力还驾驭不了你的目标时，就应该沉下心来历练，梦想不是浮躁，而是沉淀和积累。</p>
+                    <div class="box">
+                        <img src="img/6.jpg" alt=""/>
+                    </div>
+                </div>
+                <!--PAGE4-->
+                <div class="swiper-slide page4">
+                <h2>联系方式</h2>
+                    <ul class="concat">
+                        <li>
+                            <div class="icon"></div>
+                            <div class="textCon">
+                                <span>QQ:</span>1925688102
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"></div>
+                            <div class="textCon">
+                                <span>手机号:</span>18330109320
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--PAGE5-->
+                <div class="swiper-slide page5">
+                    <h2>谢谢观看！</h2>
+                    <p>thank you！</p>
+                </div>
+        </div>
+        </div>
+    </section>
+    <section id="music">
+        <audio src="audio/WeiChen.mp3" loop preload="none" id="musicAudio"></audio>
+    </section>
+</main>
+<script src="js/zhufengpeixun.min.js"></script>
+<script>
+    zhufengpeixun.config({
+        cube: 'jl-cube',
+        swipe: 'jl-swiper',
+        mak: 'jl-3d'
+    });
+
+    var music = document.getElementById('music');
+    var musicAudio = document.getElementById('musicAudio');
+    window.onload = function () {
+        musicAudio.play();
+        music.className = 'move';
+
+        music.onclick = function () {
+            if (musicAudio.paused) {
+                musicAudio.play();
+                music.className = 'move';
+            } else {
+                musicAudio.pause();
+                music.className = '';
+            }
+        }
+    };
+</script>
+</body>
+</html>
